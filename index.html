@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Movie Mate</h2>
+            <form>
+                <div class="user_input">
+                    <lable for="select_genre">Genre</lable>
+                    <select class="select_genre" id="select_genre">
+                        <option value="all genres">All</option>
+                        <option value="action">Action</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="romance">Romance</option>
+                        <option value="war">War</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Thriller">Thriller</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Science Fiction">Science Fiction</option>
+                        <option value="Horror">Horror</option>
+                        <option value="Mystery">Mystery</option>
+                        <option value="Animation">Animation</option>
+                        <option value="Biography">Biography</option>
+                    </select>
+                </div>
+                <div class="user_input">
+                    <lable for="select_imdb_rating">IMDB Rating</lable>
+                    <select class="select_imdb_rating" id="select_imdb_rating">
+                        <option value="all ratings">All</option> 
+                        <option value="higher than 9">9+</option>
+                        <option value="higher than 8">8+</option>
+                        <option value="higher than 7">7+</option>
+                        <option value="higher than 6">6+</option>
+                        <option value="higher than 5">5+</option>
+                    </select>
+                </div>
+                <div class="user_input">
+                    <lable for="select_year">Year</lable>
+                    <select class="select_year" id="select_year">
+                        <option value=" all">All</option>
+                        <option value=" 2023">2023</option>
+                        <option value=" 2022">2022</option>
+                        <option value=" 2021">2021</option>
+                        <option value=" 2020">2020</option>
+                        <option value=" 2010 to 2020">2010-2020</option>
+                        <option value=" 2000 to 2010">2000-2010</option>
+                        <option value=" 1990 to 2000">1990-2000</option>
+                        <option value=" 1980 to 1990">1980-1990</option>
+                        <option value=" 1970 to 1980">1970-1980</option>
+                        <option value=" 1960 to 1970">1960-1970</option>
+                        <option value=" 1950 to 1960">1950-1960</option>
+                        <option value=" beforeyear 1950">Below 1950</option>
+                    </select>
+                </div>
+                <div class="user_input">
+                    <lable for="select_language">Language</lable>
+                    <select class="select_language" id="select_language">
+                        <option value="all">All</option>
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                        <option value="Italian">Italian</option>
+                        <option value="German">German</option>
+                        <option value="Korean">Korean</option>
+                        <option value="Japanese">Japanese</option>
+                        <option value="Chinese">Chinese</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="Russian">Russian</option>
+                        <option value="Arabic">Arabic</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Tamil">Tamil</option>
+                        <option value="Malayalam">Malayalam</option>
+                        <option value="Telugu">Telugu</option>
+                    </select>
+                </div>
+                <button id="submit_btn">Search</button>  
+            </form>
+            <p id="movie">Your movie is...<span id="span"></span></p>
+            <!-- <h4 id="movie_year_sub">...</h4> -->
+            <div class="movie_poster" id="movie_poster">
+                
+            </div>
+        </div>
+
+        <script type="module" src="index.js"></script>
+    </body>
+</html>
